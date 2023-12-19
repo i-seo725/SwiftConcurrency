@@ -16,6 +16,7 @@
 		23F964172B31257E0054F31A /* SwiftConcurrencyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F964162B31257E0054F31A /* SwiftConcurrencyTests.swift */; };
 		23F964212B31257E0054F31A /* SwiftConcurrencyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F964202B31257E0054F31A /* SwiftConcurrencyUITests.swift */; };
 		23F964232B31257E0054F31A /* SwiftConcurrencyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F964222B31257E0054F31A /* SwiftConcurrencyUITestsLaunchTests.swift */; };
+		23F964312B3125900054F31A /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F964302B3125900054F31A /* Network.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		23F9641C2B31257E0054F31A /* SwiftConcurrencyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftConcurrencyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		23F964202B31257E0054F31A /* SwiftConcurrencyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftConcurrencyUITests.swift; sourceTree = "<group>"; };
 		23F964222B31257E0054F31A /* SwiftConcurrencyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftConcurrencyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		23F964302B3125900054F31A /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		23F963FE2B3125770054F31A /* SwiftConcurrency */ = {
 			isa = PBXGroup;
 			children = (
+				23F9642F2B3125880054F31A /* Network */,
 				23F963FF2B3125770054F31A /* AppDelegate.swift */,
 				23F964012B3125770054F31A /* SceneDelegate.swift */,
 				23F964032B3125770054F31A /* ViewController.swift */,
@@ -125,6 +128,14 @@
 				23F964222B31257E0054F31A /* SwiftConcurrencyUITestsLaunchTests.swift */,
 			);
 			path = SwiftConcurrencyUITests;
+			sourceTree = "<group>";
+		};
+		23F9642F2B3125880054F31A /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				23F964302B3125900054F31A /* Network.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +271,7 @@
 			files = (
 				23F964042B3125770054F31A /* ViewController.swift in Sources */,
 				23F964002B3125770054F31A /* AppDelegate.swift in Sources */,
+				23F964312B3125900054F31A /* Network.swift in Sources */,
 				23F964022B3125770054F31A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
