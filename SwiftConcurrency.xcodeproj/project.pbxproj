@@ -17,6 +17,8 @@
 		23F964212B31257E0054F31A /* SwiftConcurrencyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F964202B31257E0054F31A /* SwiftConcurrencyUITests.swift */; };
 		23F964232B31257E0054F31A /* SwiftConcurrencyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F964222B31257E0054F31A /* SwiftConcurrencyUITestsLaunchTests.swift */; };
 		23F964312B3125900054F31A /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F964302B3125900054F31A /* Network.swift */; };
+		F44784C02B328FA1009868FE /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44784BF2B328FA1009868FE /* TestView.swift */; };
+		F44784C22B328FD0009868FE /* HostingTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44784C12B328FD0009868FE /* HostingTestView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		23F964202B31257E0054F31A /* SwiftConcurrencyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftConcurrencyUITests.swift; sourceTree = "<group>"; };
 		23F964222B31257E0054F31A /* SwiftConcurrencyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftConcurrencyUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		23F964302B3125900054F31A /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		F44784BF2B328FA1009868FE /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		F44784C12B328FD0009868FE /* HostingTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingTestView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,8 @@
 				23F964082B31257E0054F31A /* Assets.xcassets */,
 				23F9640A2B31257E0054F31A /* LaunchScreen.storyboard */,
 				23F9640D2B31257E0054F31A /* Info.plist */,
+				F44784BF2B328FA1009868FE /* TestView.swift */,
+				F44784C12B328FD0009868FE /* HostingTestView.swift */,
 			);
 			path = SwiftConcurrency;
 			sourceTree = "<group>";
@@ -270,7 +276,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				23F964042B3125770054F31A /* ViewController.swift in Sources */,
+				F44784C02B328FA1009868FE /* TestView.swift in Sources */,
 				23F964002B3125770054F31A /* AppDelegate.swift in Sources */,
+				F44784C22B328FD0009868FE /* HostingTestView.swift in Sources */,
 				23F964312B3125900054F31A /* Network.swift in Sources */,
 				23F964022B3125770054F31A /* SceneDelegate.swift in Sources */,
 			);

@@ -31,8 +31,9 @@ enum NetworkError: Error {
  - taskGroup : 몇 개의 통신이 들어올 지 명확하지 않을 때 + 순서가 중요하지 않을 때 사용
  */
 
+@MainActor
 final class Network {
-    
+
     static let shared = Network()
     
     private init() { }
@@ -99,6 +100,7 @@ final class Network {
     
     
     //async 키워드를 붙여서 비동기로 작업함을 알려줌, 에러를 던져야 해서 throws도 추가
+    @MainActor
     func fetchThumbnailAsyncAwait(value: String) async throws -> UIImage {
         
         let url = URL(string: "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/\(value).jpg")!
@@ -131,9 +133,10 @@ final class Network {
         return try await [image1, image2, image3] //try await이 return 앞에 있어서 결과가 순서대로 오지 않아도 됨
     }
     
-    
+    @MainActor
     func fetchThumbnailTaskGroup() async throws -> [UIImage] {
         //배열의 수만큼 네트워크 요청
+        print(#function, Thread.isMainThread)
         let poster = ["tV0996od52EJ6S8dLKvcVGsO7B", "oc2Zz5JS6OgukkLoBSXUPggg30i", "w7eApyAshbepBnDyYRjSeGyRHi2"]
         
         //of: 네트워크 결과로 받고 싶은 데이터 형태
@@ -150,7 +153,7 @@ final class Network {
             for try await item in group {
                 resultImages.append(item)
             }
-            
+            print(#function, Thread.isMainThread)
             return resultImages
         }
     }
